@@ -3,12 +3,16 @@ let first = prompt('Введите свой возраст в цифрах')
 
 if(first <= 18){
     console.log('Вы ещё молоды, вам нужно учиться');
+    alert('Вы ещё молоды, вам нужно учиться')
 }else if(first <= 50) {
     console.log('Вам нужно работать');
+    alert('Вам нужно работать')
 }else if(first <= 59) {
     console.log('Вам скоро на пенсию');
+    alert('Вам скоро на пенсию')
 }else if(first <= 150) {
     console.log('Вы пенсионер')
+    alert('Вы пенсионер')
 }else  {
     console.log('Что-то пошло не так')
     alert('Что-то пошло не так')
@@ -93,6 +97,27 @@ switch (second) {
         alert('Вы ввели неправильное время')
         break;
 }
+
+let a = +prompt('Введите первое число ')
+let b = +prompt('Введите второе число')
+let c = +prompt('Введите третье число')
+
+if (a < b < c) {
+    alert(b);
+}else if (a > b > c) {
+    alert(b);
+}else if (a < b > c){
+    if (a > c) {
+        alert(a)
+    }
+    else (a < c)
+        alert(c)
+}else (a > b < c)
+    if (a > c) {
+        alert(c)
+    }
+    else(a < c)
+        alert(a)
 
 
 
